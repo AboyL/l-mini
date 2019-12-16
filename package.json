@@ -1,0 +1,39 @@
+{
+  "name": "l-miniprogram-car-keyboard",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "miniprogram": "dist",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "gulp --gulpfile build/build-dev.js"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "keywords": [
+    "miniprogram",
+    "keyboard"
+  ],
+  "author": "aboyl",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "less": "^2.7.3",
+    "del": "^5.1.0",
+    "lodash": "^4.17.15",
+    "plugin-error": "^1.0.1",
+    "through2": "^3.0.1"
+  },
+  "dependencies": {}
+}
