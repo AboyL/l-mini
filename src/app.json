@@ -2,12 +2,11 @@
   "pages": [
     "pages/home/index"
   ],
-  "usingComponents": {
-  },
+  "usingComponents": {},
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "l-mini",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

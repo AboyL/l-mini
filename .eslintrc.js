@@ -15,6 +15,7 @@ module.exports = {
     "Component": true,
     "Page": true,
     "wx": true,
+    "App": true
   },
   "rules": {
     "semi": "off",
