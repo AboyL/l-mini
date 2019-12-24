@@ -1,7 +1,7 @@
 const { src, dest, task, series, watch } = require('gulp');
 const less = require('gulp-less');
 const rename = require('gulp-rename');
-const transform_rpx = require('./transform_rpx');
+const transformRpx = require('./transform_rpx');
 const { clean } = require('./utils');
 
 const outputPath = '../dist/';
@@ -19,7 +19,7 @@ task('dispose-less', () => {
     .pipe(rename((item) => {
       item.extname = '.wxss';
     }))
-    .pipe(transform_rpx())
+    .pipe(transformRpx())
     .pipe(dest(outputPath));
 });
 
@@ -30,7 +30,7 @@ copyList.forEach(item => {
   const path = `../src/**/*.${item}`;
   taskList.push({
     path,
-    task: `copy-${item}`,
+    task: `copy-${item}`
   });
   task(`copy-${item}`, () => {
     return src(path)

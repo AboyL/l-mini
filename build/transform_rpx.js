@@ -18,11 +18,11 @@ function gulpPrefixer (multiple = 2) {
       return cb(null, file);
     }
     if (file.isBuffer()) {
-      const fileStr = file.contents.toString()
+      const fileStr = file.contents.toString();
       const f2 = fileStr.replace(/\d+px/g, (item) => {
-        const newS = item.split('px')[0] * multiple + 'rpx'
-        return newS
-      })
+        const newS = item.split('px')[0] * multiple + 'rpx';
+        return newS;
+      });
       // 将所有的px单位都转化成rpx单位
       file.contents = Buffer.from(f2);
     }
@@ -31,9 +31,7 @@ function gulpPrefixer (multiple = 2) {
     }
 
     cb(null, file);
-
   });
-
 }
 
 // Exporting the plugin main function
