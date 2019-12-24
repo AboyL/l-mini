@@ -1,5 +1,5 @@
 const config = {
   baseUrl: 'https://exmaple/'
-};
-wx.$config = config;
-export default config;
+}
+wx.$config = config
+export default config

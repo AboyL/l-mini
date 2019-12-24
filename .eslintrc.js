@@ -15,10 +15,13 @@ module.exports = {
     "Component": true,
     "Page": true,
     "wx": true,
-    "App": true
+    "App": true,
+    "getCurrentPages": true,
+    "Behavior": true,
+    "getApp": true
   },
   "rules": {
-    "semi": "off",
+    "semi": 2,
     "space-before-function-paren": "off",
     "no-self-compare": "off",
     // 启用的规则及其各自的错误级别。
@@ -38,11 +41,8 @@ module.exports = {
         "allowTemplateLiterals": true
       }
     ],
-    "semi": [ // 要求或禁止使用分号代替 ASI (semi)
-      1,
-      "always"
-    ],
     "no-console": "off",
+    "camelcase": "off",
     "no-undef": [2], // 禁用未声明的变量
   }
 }

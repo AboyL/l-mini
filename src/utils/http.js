@@ -1,4 +1,4 @@
-import * as utils from './util';
+import * as utils from './util'
 
 export default async ({
   url,
@@ -14,23 +14,23 @@ export default async ({
         'content-type': 'application/json',
         Authorization: wx.getStorageSync('token')
       }
-    });
+    })
     if (res.success) {
-      return [null, res];
+      return [null, res]
     } else {
-      throw res;
+      throw res
     }
   } catch (error) {
     // 进行错误上报工作
-    const msg = (error.data && error.data.message) || error;
+    const msg = (error.data && error.data.message) || error
 
-    wx.$log.error(msg);
-    wx.$log.addFilterMsg(url);
-    wx.$log.addFilterMsg(data);
+    wx.$log.error(msg)
+    wx.$log.addFilterMsg(url)
+    wx.$log.addFilterMsg(data)
 
     wx.$showToast({
       title: msg || '操作失败'
-    });
-    return [error];
+    })
+    return [error]
   }
-};
+}

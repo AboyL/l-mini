@@ -1,7 +1,6 @@
-
 Page({
   data: {
   },
   async onLoad () {
   }
-});
+})

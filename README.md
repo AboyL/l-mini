@@ -28,6 +28,12 @@
 
 [脚手架地址](https://github.com/AboyL/l-mini-cli)
 
+## 如何修复eslint错误
+
+在根目录下执行
+> npx eslint --fix src
+可以快速清除绝大部分的eslint的错误
+
 todo
 - [x] 提供cli
   - [x] 使用cli创建项目
