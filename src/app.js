@@ -14,6 +14,15 @@ App({
     }
   },
   onLaunch: async function (options) {
+    // 进行鉴权
+    wx.getUserInfo({
+      fail () {
+        // 跳转到登陆界面
+        wx.reLaunch({
+          url: '/pages/login/index'
+        });
+      }
+    });
     wx.getSystemInfo({
       success: function (res) {
         wx.$windowHeight = res.windowHeight;
